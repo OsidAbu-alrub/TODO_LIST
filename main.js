@@ -24,7 +24,7 @@ function displayTasksList(){
         cardList.appendChild(card);
     }
     adjustCounters();
-    id = temp + 1;
+    id = temp + 11;
 }
 
 function getFromStorage(){
@@ -76,6 +76,7 @@ addBtn.addEventListener('click', (event)=>{
     const card = createCard(task,assignee);
     cardList.appendChild(card);
     addToStorage(task,assignee,false,id);
+    adjustCounters();
     id += 1;
     console.log(id);
 })
