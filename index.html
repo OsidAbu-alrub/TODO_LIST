@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Osid Abu-Alrub">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/ca932f4515.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="body">
+    <div class="dim hide"></div>
+    <div class="popup hide">
+        <h2 class="popup-title">Careful!</h2>
+        <p class="popup-para">Are you sure you want to delete task?</p>
+        <div class="popup-btns-container">
+            <button class="popup-cancel" value="cancel">
+                cancel
+            </button>
+            <button class="popup-confirm" value="confirm">
+                confirm
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <header class="header">
+            <form action="#" id="form" class="form">
+                <div class="input-container">
+                    <label for="task-name" class="label">Task</label>
+                    <input type="text" name="task-name" class="textfield" placeholder="e.g. be the very best" autocomplete="off">
+                </div>
+
+                <div class="input-container">
+                    <label for="task-assignee" class="label">Assignee</label>
+                    <input type="text" name="task-assignee" class="textfield" placeholder="e.g. Osid Abu-Alrub" autocomplete="off">
+                </div>
+
+                <button class="btn add-btn" id="addTaskBtn">Add Task</button>
+            </form>
+        </header>
+        <main class="main">
+            <div class="search-container">
+                <input type="text" id="searchField" class="search-field" placeholder="search">
+                <i class="fas fa-search search-zoom"></i>
+                <div class="search-cancel"></div>
+            </div>
+
+            <ul class="task-list"></ul>
+        </main>
+        <footer class="footer">
+            <p class="todo-count">TODO: <span>0</span></p>
+            <p class="done-count">DONE: <span>0</span></p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
