@@ -24,7 +24,7 @@ function displayTasksList(){
         cardList.appendChild(card);
     }
     adjustCounters();
-    id = temp + 11;
+    id = temp + 1;
 }
 
 function getFromStorage(){
